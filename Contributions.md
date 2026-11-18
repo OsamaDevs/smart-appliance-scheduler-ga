@@ -30,14 +30,14 @@ git config user.email "you@example.com"
 ```bash
 git checkout main
 git pull origin main
-git checkout -b osama        # غيّر الاسم لاسمك
+git checkout -b <Your-Name>  # غيّر الاسم لاسمك
 ```
 
 ## ٣. احفظ شغلك (Commit)
 
 ```bash
 git status
-git add <file>
+git add .
 git commit -m "Add fitness function"
 ```
 
@@ -46,7 +46,7 @@ git commit -m "Add fitness function"
 ## ٤. ارفع شغلك
 
 ```bash
-git push -u origin osama
+git push -u origin <Your-Name>  # غيّر الاسم لاسمك
 ```
 
 ## ٥. افتح Pull Request كل ما تخلّص شغلة صغيرة
@@ -58,7 +58,7 @@ git push -u origin osama
 ## ٦. حدّث الـ branch بتاعك بعد كل Merge
 
 ```bash
-git checkout osama
+git checkout <Your-Name>  # غيّر الاسم لاسمك
 git fetch origin
 git merge origin/main
 ```
@@ -66,7 +66,7 @@ git merge origin/main
 لو ظهر **Conflict**: افتح الملف، دوّر على العلامات `<<<<<<<` و `=======` و `>>>>>>>`، سيب الكود الصح وامسح العلامات، وبعدين:
 
 ```bash
-git add <file>
+git add .
 git commit
 ```
 
